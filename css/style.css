@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Futura Book';
-  src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/FuturaBookC.woff2") format("woff");
+  src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/FuturaBookC.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: wrap; }
 
 @font-face {
   font-family: 'Futura Demi';
-  src: url("../fonts/futura/FuturaDemiC.woff") format("woff"), url("../fonts/futura/FuturaDemiC.woff2") format("woff");
+  src: url("../fonts/futura/FuturaDemiC.woff") format("woff"), url("../fonts/futura/FuturaDemiC.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: wrap; }
@@ -331,6 +331,11 @@ template {
   margin: auto; }
 
 .header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
   background-color: #131313;
   padding: 24px 0; }
 
@@ -355,6 +360,52 @@ template {
 .contacts__phone {
   margin-right: 45px; }
 
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 100px;
+  background: #131313 url("../img/hero.jpg") no-repeat center/cover;
+  height: 100vh;
+  color: #ffffff; }
+  .hero__instagram {
+    left: 0;
+    top: 0;
+    position: absolute;
+    max-width: 80px;
+    height: 100%; }
+  .hero__scroll-down {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    min-width: 247px;
+    min-height: 97px;
+    background-color: #131313;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff; }
+
+.instagram {
+  background: #131313;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .instagram__link {
+    text-transform: uppercase;
+    color: #E3B873;
+    text-decoration: none;
+    transform: rotate(-90deg); }
+
+.title {
+  margin: 0; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
 body {
-  font-family: 'FuturaBook';
+  font-family: 'FuturaBook, sans-serif';
   font-size: 14px; }
