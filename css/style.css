@@ -410,7 +410,7 @@ template {
     text-transform: uppercase;
     color: #E3B873;
     text-decoration: none;
-    transform: rotate(-90deg); }
+    transform: rotate(90deg); }
 
 .title {
   margin: 0;
