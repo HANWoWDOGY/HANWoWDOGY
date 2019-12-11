@@ -378,7 +378,7 @@ img {
     margin-top: 1.64rem;
     font-size: 1.07rem;
     line-height: 135.84%;
-    max-width: 21.86rem; }
+    max-width: 48rem; }
 
 .header {
   position: fixed;
@@ -556,15 +556,6 @@ img {
   color: #ffffff;
   padding: 1.214rem 2.6rem; }
 
-@media screen and (max-width: 760px) {
-  .row {
-    flex-direction: column;
-    align-items: center; }
-  .types__card {
-    margin-bottom: 5rem; }
-    .types__card .card__text {
-      margin-left: 0; } }
-
 .design {
   background-color: #131313; }
   .design__section-title {
@@ -643,7 +634,18 @@ img {
   .hero__content {
     margin-left: 0; } }
 
+@media screen and (max-width: 760px) {
+  .row {
+    flex-direction: column;
+    align-items: center; }
+  .types__card {
+    margin-bottom: 5rem; }
+    .types__card .card__text {
+      margin-left: 0; } }
+
 @media screen and (max-width: 570px) {
+  .section-title__description {
+    max-width: 21.86rem; }
   .contacts__button {
     display: none; }
   .contacts__phone {
