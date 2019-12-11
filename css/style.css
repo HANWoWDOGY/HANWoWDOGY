@@ -446,9 +446,9 @@ img {
     margin-bottom: 3rem; }
   .hero__button {
     margin-right: 20px;
-    padding: 20px 35px; }
+    padding: 19px 26px; }
   .hero__button1 {
-    padding: 19.09px 23px 20.57px 22px; }
+    padding: 18px 40px; }
   .hero__instagram {
     left: 0;
     top: 0;
@@ -563,7 +563,13 @@ img {
   .types__card {
     margin-bottom: 5rem; }
     .types__card .card__text {
-      margin-left: 0; } }
+      margin-left: 0; }
+  background-color: #131313;
+  __section-title {
+    color: #ffffff;
+    margin-bottom: 2.78rem; }
+  __design {
+    margin-bottom: 5.7rem; } }
 
 .design {
   background-color: #131313; }
