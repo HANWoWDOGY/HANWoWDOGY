@@ -477,7 +477,8 @@ img {
     line-height: 2.14rem;
     max-width: 500px;
     margin: 0;
-    margin-bottom: 3rem; }
+    margin-bottom: 2.928rem;
+    margin-top: 1.35rem; }
   .hero__button {
     margin-right: 20px;
     padding: 19px 26px; }
@@ -655,6 +656,10 @@ img {
     .design__section-title {
       color: #131313; } }
 
+@media screen and (max-width: 760px) {
+  .card__text {
+    margin-left: 0; } }
+
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -688,24 +693,30 @@ img {
     background: transparent url("../img/close.svg") no-repeat center;
     border: none;
     margin: 12px;
-    cursor: pointer; }
+    cursor: pointer;
+    outline: none; }
   .modal__title {
     font-family: 'Yeseva One', cursive;
     font-size: 1.357rem;
     text-align: center;
     margin: 0;
-    margin-bottom: 4.428rem; }
+    margin-bottom: 4.428rem;
+    font-weight: 400; }
   .modal__form {
     display: flex;
     flex-direction: column; }
   .modal__input {
-    margin-bottom: 3.428rem; }
+    margin-bottom: 3.428rem;
+    outline: none; }
     .modal__input:last-of-type {
       margin-bottom: 1rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
     align-self: flex-end; }
+
+.button {
+  outline: none; }
 
 @media screen and (max-width: 1200px) {
   html {
