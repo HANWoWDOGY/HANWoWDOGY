@@ -415,8 +415,7 @@ img {
     text-transform: uppercase;
     font-size: 1.928rem;
     line-height: 138.6%;
-    font-weight: 400;
-    max-width: 18.07rem; }
+    font-weight: 400; }
     .section-title__heading--primary {
       color: #E3B873; }
   .section-title__word {
@@ -424,10 +423,10 @@ img {
     align-items: center; }
     .section-title__word::after {
       content: '';
-      width: 91px;
+      width: 92px;
       height: 1px;
       background-color: #E3B873;
-      margin-left: 2rem; }
+      margin-left: 1.8rem; }
   .section-title__text {
     font-size: 1.28rem;
     line-height: 2.07rem;
@@ -759,6 +758,10 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-top: 1rem; }
+  .swiper-slide__exposition {
+    display: flex;
+    align-items: center;
+    line-height: 0.01rem; }
   .swiper-slide__text {
     flex-basis: 34%;
     margin-bottom: 2.42rem;
@@ -770,7 +773,8 @@ img {
     color: #E3B873;
     text-transform: uppercase;
     margin-bottom: 0.64rem;
-    font-weight: 400; }
+    font-weight: normal;
+    max-width: 18.07rem; }
 
 .swiper-pagination-bullet {
   background-color: rgba(255, 255, 255, 0.3); }
