@@ -2,15 +2,14 @@
   &-slide
     display: flex
     flex-wrap: wrap
+    margin-bottom: 5rem
     margin-top: 1rem
-    &__exposition
-      display: flex
-      align-items: center
-      line-height: 0.01rem
+    &r
+      &-image
+        margin-top: -13rem
     &__text
       flex-basis: 34%
-      margin-bottom: 0.38rem
-      padding-bottom: 0.57rem
+      padding-bottom: 2rem
     &__heading
       font-size: 1.285rem
       line-height: 1.78rem
@@ -18,7 +17,6 @@
       color: $primary
       text-transform: uppercase
       margin-bottom: 0.64rem
-      font-weight: normal
       max-width: 18.07rem
   &-pagination
     &-bullet
@@ -29,7 +27,6 @@
     &-prev, &-next
       bottom: 0
       top: auto
-      background-size: 42px
       width: 42px
       height: 14px
       &::after
@@ -41,5 +38,7 @@
       background: url("../img/arrow-next.svg") no-repeat center
 .swiper-container-horizontal>.swiper-pagination-bullets
   width: auto
-  bottom: 0
+  bottom: 0  
+
+
   

@@ -2,6 +2,14 @@
   html
     font-size: 12px
 @media screen and ( max-width: 992px )
+  .swiper-button-prev
+    left: 30%
+  .swiper-button-next 
+    left: auto !important
+    right: 30%
+  .swiper-pagination-bullets 
+    left: 50% !important
+    transform: translateX(-50%) !important
   .nav
     display: none
     &__item
@@ -21,10 +29,30 @@
       margin-bottom: 5rem
       .card
         &__text
-          margin-left: 0      
+          margin-left: 0
+  .swiper
+    &-slider
+      &-image
+        margin-top: 0
+  .mobile-order-top
+    order: -1
+  .col-50
+    width: 100%
+  .navigation
+    display: flex
+    justify-content: center  
 @media screen and ( max-width: 570px )
   .section
     &-title
+      text-align: center
+      &__text
+        margin: 2rem auto
+        line-height: 158.48%
+      &__word
+        justify-content: center
+        &::after
+          content: ''
+          display: none
       &__description
         max-width: 21.86rem
   .contacts
@@ -62,6 +90,8 @@
         flex-basis: 50%
         margin-bottom: 2.42rem
         padding-bottom: 0.57rem
+
+  
   
 
 

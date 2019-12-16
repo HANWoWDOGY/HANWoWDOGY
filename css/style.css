@@ -757,15 +757,13 @@ img {
 .swiper-slide {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 5rem;
   margin-top: 1rem; }
-  .swiper-slide__exposition {
-    display: flex;
-    align-items: center;
-    line-height: 0.01rem; }
+  .swiper-slider-image {
+    margin-top: -13rem; }
   .swiper-slide__text {
     flex-basis: 34%;
-    margin-bottom: 0.38rem;
-    padding-bottom: 0.57rem; }
+    padding-bottom: 2rem; }
   .swiper-slide__heading {
     font-size: 1.285rem;
     line-height: 1.78rem;
@@ -773,7 +771,6 @@ img {
     color: #E3B873;
     text-transform: uppercase;
     margin-bottom: 0.64rem;
-    font-weight: normal;
     max-width: 18.07rem; }
 
 .swiper-pagination-bullet {
@@ -784,7 +781,6 @@ img {
 .swiper-button-prev, .swiper-button-next {
   bottom: 0;
   top: auto;
-  background-size: 42px;
   width: 42px;
   height: 14px; }
   .swiper-button-prev::after, .swiper-button-next::after {
@@ -806,6 +802,14 @@ img {
     font-size: 12px; } }
 
 @media screen and (max-width: 992px) {
+  .swiper-button-prev {
+    left: 30%; }
+  .swiper-button-next {
+    left: auto !important;
+    right: 30%; }
+  .swiper-pagination-bullets {
+    left: 50% !important;
+    transform: translateX(-50%) !important; }
   .nav {
     display: none; }
     .nav__item {
@@ -822,11 +826,30 @@ img {
   .types__card {
     margin-bottom: 5rem; }
     .types__card .card__text {
-      margin-left: 0; } }
+      margin-left: 0; }
+  .swiper-slider-image {
+    margin-top: 0; }
+  .mobile-order-top {
+    order: -1; }
+  .col-50 {
+    width: 100%; }
+  .navigation {
+    display: flex;
+    justify-content: center; } }
 
 @media screen and (max-width: 570px) {
-  .section-title__description {
-    max-width: 21.86rem; }
+  .section-title {
+    text-align: center; }
+    .section-title__text {
+      margin: 2rem auto;
+      line-height: 158.48%; }
+    .section-title__word {
+      justify-content: center; }
+      .section-title__word::after {
+        content: '';
+        display: none; }
+    .section-title__description {
+      max-width: 21.86rem; }
   .contacts__button {
     display: none; }
   .contacts__phone {
