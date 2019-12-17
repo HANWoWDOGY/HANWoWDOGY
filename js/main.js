@@ -45,4 +45,6 @@ $(document).ready(function () {
   next.css("left", prev.width() + 40 + bullets.width() + 40)
   bullets.css("left", prev.width() + 40)
 
+  new WOW().init();
+
 });

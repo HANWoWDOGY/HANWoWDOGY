@@ -45,6 +45,8 @@
   .section
     &-title
       text-align: center
+      &__heading
+        margin-bottom: 20px
       &__text
         margin: 2rem auto
         line-height: 158.48%
@@ -53,6 +55,8 @@
         &::after
           content: ''
           display: none
+      &__image
+        margin-bottom: 40px
       &__description
         max-width: 21.86rem
   .contacts
@@ -96,6 +100,39 @@
       &__text
         flex-basis: 50%
         padding-bottom: 1.9rem
+@media screen and ( max-width: 992px )
+  .control
+    background-color: #000000
+    &__video
+      max-width: 100%
+    &__form
+      display: block
+    &__text
+      color: #ffffff
+      font-size: 16px
+      line-height: 169.8%
+    &__input-group
+      margin-bottom: 69px
+    &__button
+      width: 340px
+    &__label
+      font-weight: normal
+      font-size: 17px
+      line-height: 20px
+      color: rgba(255, 255, 255, 0.5)
+    &__input
+      font-weight: normal
+      font-size: 20px
+      line-height: 138.72%
+      border-color: $light
+      &::placeholder
+        color: #ffffff
+    &__policy-label
+      color: #ffffff
+      font-size: 16px
+      line-height: 22px
+  .policy-order-top
+    order: -1
 
   
   
