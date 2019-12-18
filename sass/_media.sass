@@ -103,10 +103,8 @@
 @media screen and ( max-width: 992px )
   .control
     background-color: #000000
-    &__video
-      max-width: 100%
     &__form
-      display: block
+      flex-direction: column
     &__text
       color: #ffffff
       font-size: 16px
@@ -127,12 +125,15 @@
       border-color: $light
       &::placeholder
         color: #ffffff
-    &__policy-label
-      color: #ffffff
-      font-size: 16px
-      line-height: 22px
-  .policy-order-top
-    order: -1
+    &__policy
+      margin-left: -6.5rem
+      order: 0
+      margin-bottom: 4.43rem
+      margin-top: -2rem
+      &-label
+        color: #ffffff
+        font-size: 16px
+        line-height: 22px
 
   
   
