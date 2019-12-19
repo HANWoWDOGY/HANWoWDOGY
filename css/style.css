@@ -940,6 +940,11 @@ img {
     display: none; }
     .nav__item {
       margin-right: 1rem; }
+  .hero__title {
+    max-width: 24.21rem;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 132.83%; }
   .hero__instagram {
     display: none; }
   .hero__content {
@@ -1032,7 +1037,7 @@ img {
     .control__input-group {
       margin-bottom: 69px; }
     .control__button {
-      width: 340px; }
+      max-width: 340px; }
     .control__label {
       font-weight: normal;
       font-size: 17px;
