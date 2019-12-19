@@ -73,7 +73,60 @@ $(document).ready(function () {
         email: "Пример: name@domain.com"
       }
     }
+  
   });
+
+  $('.footer__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2
+      },
+      userPhone: "required",
+      // compound rule
+      userQuestion: {
+        required: true,
+        minlength: 20
+      }
+    },
+    messages: {
+      userName: {
+        required: "Укажите ваше имя",
+        minlength: "Имя не менее двух букв"
+      }, 
+      userPhone: "Укажите ваш номер телефона",
+      userQuestion: {
+        required: "Укажите ваш вопрос ",
+        question: "Введите не менее 20 символов"
+      }
+    }
+  
+  });
+
+  $('.control__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2
+      },
+      userPhone: "required",
+
+      },
+    messages: {
+      userName: {
+        required: "Укажите ваше имя",
+        minlength: "Имя не менее двух букв"
+      }, 
+      userPhone: "Укажите ваш номер телефона",
+      
+    }
+
+  });
+
 
   //маска для телефона
 
