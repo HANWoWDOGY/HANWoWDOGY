@@ -49,6 +49,7 @@ $(document).ready(function () {
 
   $('.modal__form').validate({
     errorClass: "invalid",
+    
     rules: {
       // simple rule, converted to {required:true}
       userName: {
@@ -78,6 +79,7 @@ $(document).ready(function () {
 
   $('.footer__form').validate({
     errorClass: "invalid",
+    errorElement: "em",
     rules: {
       // simple rule, converted to {required:true}
       userName: {
@@ -107,6 +109,7 @@ $(document).ready(function () {
 
   $('.control__form').validate({
     errorClass: "invalid",
+    errorElement: "div",
     rules: {
       // simple rule, converted to {required:true}
       userName: {

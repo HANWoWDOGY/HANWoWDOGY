@@ -373,11 +373,19 @@ template {
   .policy__label--center {
     justify-content: center; }
 
-label.invalid {
-  color: tomato; }
+em.invalid {
+  color: tomato;
+  position: absolute;
+  display: block;
+  bottom: -1px; }
 
 input.invalid {
   border-bottom: 1px solid tomato; }
+
+div.invalid {
+  color: tomato;
+  position: absolute;
+  bottom: 103px; }
 
 .container {
   width: 85%;
@@ -820,27 +828,32 @@ img {
     background-color: #131313;
     padding: 4.285rem 0; }
   .footer__map {
-    margin-bottom: 4.64rem; }
+    width: 100%;
+    max-width: 66rem;
+    margin-bottom: 4.64rem;
+    margin: auto; }
   .footer__document {
-    padding-top: 1rem; }
-  .footer__heading-bottom {
-    margin: auto;
+    padding-top: 1.21rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center; }
+  .footer__contact {
     text-align: center;
-    text-transform: uppercase;
+    color: #E3B873;
+    font-size: 20px;
+    line-height: 28px;
     font-family: 'Yeseva One', cursive;
-    font-size: 1.429rem;
-    line-height: 2rem;
-    max-width: 39rem; }
-  .footer__design {
-    text-align: center; }
-  .footer__design-card {
-    display: inline-block;
-    margin-top: 1.65rem;
-    margin-right: 1rem;
-    margin-bottom: 2.6rem; }
-
-.section--primary {
-  color: #E3B873; }
+    text-transform: uppercase; }
+  .footer__phone {
+    display: block; }
+  .footer-card {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.7rem; }
+  .footer-link {
+    margin-right: 1.071rem;
+    margin-bottom: 2.5rem; }
 
 .modal {
   opacity: 0;
@@ -1095,8 +1108,12 @@ img {
       background: #131313;
       padding: 0; }
     .footer__map {
-      max-width: 100%; }
-    .footer__heading-bottom {
+      margin-bottom: 0;
+      order: 0; }
+    .footer__document {
+      padding-bottom: 0; }
+    .footer__contact {
+      margin-top: 2rem;
       font-size: 18px;
       line-height: 138.6%;
       max-width: 340px;
@@ -1104,16 +1121,25 @@ img {
     .footer__menu {
       display: none; }
     .footer__map {
-      margin-bottom: 0; }
+      order: -1; }
     .footer__title {
       font-size: 20px; }
     .footer__button {
       width: 340px;
-      font-size: 15px; }
+      font-size: 15px;
+      text-align: center; }
     .footer__policy {
       margin-left: 0; }
+    .footer-card {
+      margin: auto; }
+    .footer-link {
+      margin-top: 1.71rem;
+      margin-bottom: 1.71em;
+      margin-right: 1.5rem; }
   .form__label {
     font-size: 15px; }
   .form__input {
     font-size: 18px;
-    border-color: #ffffff; } }
+    border-color: #ffffff; }
+  .design {
+    padding-bottom: 15rem; } }
